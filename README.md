@@ -1,4 +1,4 @@
-# SolutionPlan_Template
+# Solution Plane for Fork Bomb
 
 # 1. Your Team at a Glance
 
