@@ -22,9 +22,8 @@
 *Which challenge have you decided to compete for?*
 
 ## Core Idea  
-*What is your rough solution idea?*
-
-*Sketch something that helps understand e.g. mermaid chart*
+Traffic Jam Speed Optimization: <br>
+Our vision is a connected vehicle grid where cars share real-time data to prevent collisions and create safer, synchronized traffic flow, for the driver and bystanders. As a small-scale prototype of this vision, we developed an ADAS feature that combines Adaptive Cruise Control and Lane Keeping Assist, reacting to the signal received by the car in front, to guide speed, distance, and lane decisions, which would be a second factor in decision making of our vehicle, that can be overruled in case of any unexpected scenario 
 
 ---
 
