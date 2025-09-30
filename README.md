@@ -30,7 +30,7 @@ Our vision is a connected vehicle grid where cars share real-time data to preven
 *Brief overview of your development process.*
 
 ### Planning & Tracking  
-*How do you plan and track progress?*
+Our progress is tracked in GitHub Projects, and we plan our tasks through Issues.
 
 ### Quality Assurance  
 To ensure quality, we idealize a validation to our prototype through repeated testing in different traffic scenarios with two to three cars connected with multiple edge cases. 
