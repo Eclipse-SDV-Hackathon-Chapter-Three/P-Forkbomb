@@ -5,9 +5,6 @@
 ## Team Name / Tagline  
 *ForkBomb 💣*
 
-*create a sheet of paper with your team name on the desk.*
-
-*Feel free to include a picture representing your team*
 
 ## Team Members  
 | Name | GitHub Handle | Role(s) |
