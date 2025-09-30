@@ -9,11 +9,12 @@
 ## Team Members  
 | Name | GitHub Handle | Role(s) |
 |-------|---------------|---------|
-| Afonso Mota       | AfonsoMota-132           |         |
-| João Figueiredo    | joao41-second       |         |
-| José Junior     | joseevilasio     |         |
-| Marco Amorim   | maugustooo            |         |
-| Marco Santos    | mmiguelo        |         |
+| Afonso Mota       | AfonsoMota-132           | Developer        |
+| João Figueiredo    | joao41-second       | system integrator        |
+| José Junior     | joseevilasio     | Developer        |
+| Marco Amorim   | maugustooo            | Testing        |
+| Marco Santos    | mmiguelo        | Research        |
+
 
 ## Challenge  
 SDV_Lab -> ADAS feature
