@@ -19,7 +19,7 @@
 | Marco Santos    | mmiguelo        |         |
 
 ## Challenge  
-*Which challenge have you decided to compete for?*
+SDV_Lab -> ADAS feature
 
 ## Core Idea  
 Traffic Jam Speed Optimization: <br>
@@ -36,10 +36,10 @@ Our vision is a connected vehicle grid where cars share real-time data to preven
 *How do you plan and track progress?*
 
 ### Quality Assurance  
-*How do you ensure quality (e.g., testing, documentation, code reviews)?*
+To ensure quality, we idealize a validation to our prototype through repeated testing in different traffic scenarios with two to three cars connected with multiple edge cases. 
 
 ## Communication  
-*How does your team communicate?*
+Our team communicates primarily by face-to-face  communication and online messaging platforms, when outside of regular hours. This allows us to quickly exchange ideas, update progress, and resolve blockers in real time.
 
 ## Decision Making  
-*How are decisions made in your team?*
+Decisions were made collaboratively, with discussions to weigh pros and cons. When disagreements arise, we prioritized feasibility and alignment with our core vision to reach consensus efficiently, and not diverge much from the proposed feature. 
