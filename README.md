@@ -3,7 +3,7 @@
 # 1. Your Team at a Glance
 
 ## Team Name / Tagline  
-*Brief catchy tagline or team name*
+*ForkBomb 💣*
 
 *create a sheet of paper with your team name on the desk.*
 
@@ -12,9 +12,11 @@
 ## Team Members  
 | Name | GitHub Handle | Role(s) |
 |-------|---------------|---------|
-|       |               |         |
-|       |               |         |
-|       |               |         |
+| Afonso Mota       | AfonsoMota-132           |         |
+| João Figueiredo    | joao41-second       |         |
+| José Junior     | joseevilasio     |         |
+| Marco Amorim   | maugustooo            |         |
+| Marco Santos    | mmiguelo        |         |
 
 ## Challenge  
 *Which challenge have you decided to compete for?*
