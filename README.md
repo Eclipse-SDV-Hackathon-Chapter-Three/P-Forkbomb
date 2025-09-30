@@ -27,7 +27,7 @@ Our vision is a connected vehicle grid where cars share real-time data to preven
 # 2. How Do You Work
 
 ## Development Process  
-*Brief overview of your development process.*
+We follow an Agile development process, working in short iterations to deliver value continuously while adapting to changing requirements
 
 ### Planning & Tracking  
 Our progress is tracked in GitHub Projects, and we plan our tasks through Issues.
