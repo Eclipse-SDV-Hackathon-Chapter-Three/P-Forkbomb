@@ -1,0 +1,11 @@
+/home/seame/Documents/androidapp/target/debug/deps/tokio_rustls-34182abf37ab5418.d: /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/lib.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/client.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/mod.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/handshake.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/server.rs
+
+/home/seame/Documents/androidapp/target/debug/deps/libtokio_rustls-34182abf37ab5418.rlib: /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/lib.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/client.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/mod.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/handshake.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/server.rs
+
+/home/seame/Documents/androidapp/target/debug/deps/libtokio_rustls-34182abf37ab5418.rmeta: /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/lib.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/client.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/mod.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/handshake.rs /home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/server.rs
+
+/home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/lib.rs:
+/home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/client.rs:
+/home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/mod.rs:
+/home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/common/handshake.rs:
+/home/seame/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.25.0/src/server.rs:
