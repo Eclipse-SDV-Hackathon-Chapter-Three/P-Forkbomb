@@ -1,0 +1,10 @@
+apiVersion: v0.1
+workloads:
+  uprotocol-sensors:
+    runtime: podman
+    agent: agent_A
+    restartPolicy: NEVER
+    runtimeConfig: |
+      image: uprotocol-sensors:latest
+      commandOptions: [ "--net=host" ]
+

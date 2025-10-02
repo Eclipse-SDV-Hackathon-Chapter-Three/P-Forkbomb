@@ -1,0 +1,9 @@
+apiVersion: v0.1
+workloads:
+  ego-vehicle-zenoh-control:
+    runtime: podman
+    agent: agent_A
+    restartPolicy: NEVER
+    runtimeConfig: |
+      image: ego-vehicle-uprotocol-control
+      commandOptions: ["-e", "RUST_LOG=debug", "--net=host"]
