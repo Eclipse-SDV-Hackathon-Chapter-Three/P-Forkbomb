@@ -1,0 +1,159 @@
+warning: type `LidarMeasurement` is more private than the item `UProtocolHandler::get_latest_lidar_data`
+   --> src/uprotocol_handler.rs:144:5
+    |
+144 |     pub fn get_latest_lidar_data(&self) -> Option<LidarMeasurement> {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ method `UProtocolHandler::get_latest_lidar_data` is reachable at visibility `pub(crate)`
+    |
+note: but type `LidarMeasurement` is only usable at visibility `pub(self)`
+   --> src/uprotocol_handler.rs:62:1
+    |
+ 62 | struct LidarMeasurement {
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+    = note: `#[warn(private_interfaces)]` on by default
+
+warning: methods `get_latest_lidar_data` and `get_closest_obstacle` are never used
+   --> src/uprotocol_handler.rs:144:12
+    |
+ 91 | impl UProtocolHandler {
+    | --------------------- methods in this implementation
+...
+144 |     pub fn get_latest_lidar_data(&self) -> Option<LidarMeasurement> {
+    |            ^^^^^^^^^^^^^^^^^^^^^
+...
+150 |     pub fn get_closest_obstacle(&self) -> Option<f64> {
+    |            ^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `pid_cruise_control` (bin "pid_controller") generated 2 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.12s
+warning: the following packages contain code that will be rejected by a future version of Rust: num-bigint-dig v0.8.4
+note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+     Running `target/debug/pid_controller`
+[2025-10-01T21:25:02Z INFO  pid_controller] *** Started PID Controller with uProtocol
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime] Using ZID: 58488eab7f93b0ccb5a57c8668638f30
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/[2001:818:da10:7000:ba66:afa6:fab1:b471]:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/[2001:818:da10:7000:3ceb:2015:4f46:122f]:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/[fd7a:115c:a1e0::ee34:f153]:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/100.103.241.83:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/[fe80::8dd:ffda:6876:44ee]:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/[fe80::e0ae:1f53:b928:bdd5]:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] Zenoh can be reached at: tcp/192.168.1.118:45029
+[2025-10-01T21:25:02Z INFO  zenoh::net::runtime::orchestrator] zenohd listening scout messages on 224.0.0.224:7446
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Starting UProtocolHandler subscribers...
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Timestamp subscriber registered
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Velocity subscriber registered
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Target Speed subscriber registered
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Engage subscriber registered
+[2025-10-01T21:25:02Z INFO  pid_controller::uprotocol_handler] Lidar subscriber registered for URI: //EGOVehicle/0/2/8003
+[2025-10-01T21:25:02Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268038
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269341
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270832
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274560
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271249
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271721
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271374
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270380
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268054
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272163
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269667
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266209
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268752
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270482
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267405
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266154
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267607
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270045
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270253
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 265114
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267596
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269316
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266830
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272865
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274187
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 264252
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271647
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272561
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269453
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271705
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270108
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 275000
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269755
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270045
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272453
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271448
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268123
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269319
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266043
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266814
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274290
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270490
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268104
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 265583
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 261419
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268853
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268447
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267387
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266939
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269275
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274091
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268908
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 273701
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 263194
+[2025-10-01T21:25:03Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 263934
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270871
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269584
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271482
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266412
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266247
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268084
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269321
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 276567
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272337
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272976
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272232
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266079
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267474
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270999
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268146
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272838
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266624
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 273063
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269063
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 273480
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269803
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272164
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274498
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 268155
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270794
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 275530
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266316
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 263165
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269935
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 272340
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269477
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271138
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 275669
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271340
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266450
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 263519
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269733
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267062
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269024
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 273695
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 266025
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274048
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267538
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270517
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 274169
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 271530
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 267649
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269802
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 269288
+[2025-10-01T21:25:04Z ERROR pid_controller::uprotocol_handler] Failed to parse lidar measurement: missing field `points` at line 1 column 270760
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] Results saved to logs/desired_velocity.log
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] Results saved to logs/acceleration.log
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] Results saved to logs/current_time.log
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] Results saved to logs/current_velocity.log
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] PID Controller Results Summary:
+[2025-10-01T21:25:04Z INFO  pid_controller::uprotocol_handler] Total data points: 0

@@ -1,0 +1,18 @@
+apiVersion: v0.1
+workloads:
+  rust-uprotocol-controller:
+    runtime: podman
+    agent: agent_A
+    restartPolicy: NEVER
+    runtimeConfig: |
+      image: ghcr.io/eclipse-sdv-hackathon-chapter-three/sdv-lab/pid-rust-uprotocol-controller:latest
+      commandOptions: ["-e", "RUST_LOG=debug", "--net=host"]
+  rust-uprotocol-simulator:
+    runtime: podman
+    agent: agent_A
+    dependencies:
+      rust-uprotocol-controller: ADD_COND_RUNNING
+    restartPolicy: NEVER
+    runtimeConfig: |
+      image: ghcr.io/eclipse-sdv-hackathon-chapter-three/sdv-lab/pid-rust-uprotocol-simulator:latest
+      commandOptions: ["-e", "RUST_LOG=debug", "--net=host"]
